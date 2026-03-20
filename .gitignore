@@ -1,0 +1,155 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# .gitignore — Microsoft Foundry Agent Service Migration Sample
+# Covers: C# / .NET · Python · JavaScript/Node · OS / editor artefacts
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SECRETS — never commit real credentials
+# ─────────────────────────────────────────────────────────────────────────────
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.pfx
+*.p12
+*secrets*.json
+*secrets*.yaml
+*secrets*.yml
+appsettings.Development.json
+appsettings.Local.json
+
+# ─────────────────────────────────────────────────────────────────────────────
+# C# / .NET
+# ─────────────────────────────────────────────────────────────────────────────
+bin/
+obj/
+out/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+TestResults/
+[Rr]elease/
+[Dd]ebug/
+[Pp]ublish/
+*.log
+*.swp
+*.bak
+*.tmp
+
+# .NET secrets store (contains real secrets in plain JSON)
+**/secrets.json
+
+# NuGet package cache
+packages/
+*.nupkg
+# Packages directory used by NuGet before restore with PackageReference
+!**/[Pp]ackages/build/
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Python
+# ─────────────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/           # folder-style venv named .env
+Lib/
+Scripts/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+pip-wheel-metadata/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.coveragerc
+
+# mypy / pyright / ruff caches
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ─────────────────────────────────────────────────────────────────────────────
+# JavaScript / Node.js
+# ─────────────────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+.yarn/
+.pnp.*
+package-lock.json   # keep yarn.lock / pnpm-lock if preferred; remove if using npm
+# yarn.lock          # uncomment if you prefer to exclude yarn lockfile
+
+# Build output (for bundled JS projects)
+dist/
+build/
+.next/
+.nuxt/
+.output/
+
+# TypeScript
+*.tsbuildinfo
+
+# ─────────────────────────────────────────────────────────────────────────────
+# VS Code
+# ─────────────────────────────────────────────────────────────────────────────
+# Keep: .vscode/extensions.json, .vscode/settings.json (project-wide settings)
+# Exclude: personal / machine-specific files
+.vscode/launch.json
+.vscode/*.code-workspace
+
+# ─────────────────────────────────────────────────────────────────────────────
+# OS artefacts
+# ─────────────────────────────────────────────────────────────────────────────
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.nfs*
