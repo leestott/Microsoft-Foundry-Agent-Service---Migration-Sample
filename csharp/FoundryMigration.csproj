@@ -20,7 +20,7 @@
       Runtime plane — API-key inference via Azure AI Foundry inference endpoint
       https://www.nuget.org/packages/Azure.AI.Inference
     -->
-    <PackageReference Include="Azure.AI.Inference" Version="1.0.0-beta.6" />
+    <PackageReference Include="Azure.AI.Inference" Version="1.0.0-beta.5" />
 
     <!--
       Runtime plane — API-key inference via Azure OpenAI endpoint (OpenAI surface)
